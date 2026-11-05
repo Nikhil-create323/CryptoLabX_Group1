@@ -205,7 +205,6 @@ python mt19937_attack.py
 - Original Unix timestamp.
 - Timestamp search interval.
 - Number of timestamps tested.
-- Recovered timestamp.
 - Token verification.
 
 ## Conclusion
