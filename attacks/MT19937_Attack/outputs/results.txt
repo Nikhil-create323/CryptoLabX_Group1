@@ -1,0 +1,40 @@
+========== PART A: MT19937 STREAM CIPHER ==========
+
+Original message: Hello MT19937 Stream Cipher
+Ciphertext (hex): 956fd00cbcf99d83c0533866cb10bb167f07cef20a0b1224c37122
+Decrypted message: Hello MT19937 Stream Cipher
+Encryption and decryption successful: True
+
+========== SEED RECOVERY ==========
+Original plaintext: 0q%V_%8xKA}8@0GWtAAAAAAAAAAAAAA
+Original seed: 8886
+Ciphertext (hex): 29f749bc5ead2c449f3b0ffa0e83c12276ea10c8158ac73e71cce6e4781f2f
+Plaintext length: 31
+
+Seeds tested: 8887
+Recovered seed: 8886
+Known sequence position: 17
+Recovered plaintext: 0q%V_%8xKA}8@0GWtAAAAAAAAAAAAAA
+Recovered seed is correct: True
+Complete plaintext verified: True
+14 consecutive A characters found: True
+
+========== PART B: PASSWORD RESET TOKEN ==========
+
+Original timestamp: 1793895074
+Original token (hex): 4cb5d588260d5a2586558221f35f509f
+
+========== TIMESTAMP RECOVERY ==========
+Search start: 1793894774
+Search end: 1793895374
+
+Total timestamps tested: 601
+Recovered timestamp: 1793895074
+Recovered token (hex): 4cb5d588260d5a2586558221f35f509f
+Timestamp is correct: True
+Token verification: True
+
+========== FINAL RESULT ==========
+Part A: MT19937 weak seed recovery completed.
+Part B: Timestamp-based token prediction completed.
+The experiment demonstrates why MT19937 is not suitable for cryptographic use.
